@@ -1,16 +1,19 @@
-# React + Vite
+# 💻 Walid El Moussaoui — Full-Stack Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Passionate about creating **modern, scalable web applications** from front to back.  
+I love crafting clean UIs with **React** and building secure APIs with **Laravel** and **Node.js**.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ⚙️ Tech Stack
+**Frontend:** HTML, CSS, JavaScript, React  
+**Backend:** PHP (Laravel), Node.js  
+**Database:** MySQL, SQL, PL/SQL  
+**Tools:** Git, GitHub, Figma, VS Code  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📬 Contact
+📧 **elmoussaouiwalid05@gmail.com**  
+💼 [LinkedIn](https://www.linkedin.com/in/walid-el-moussaoui-502625387/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDOKkH63MRTijxiWoEaol6w%3D%3D)  
+🐙 [GitHub](https://github.com/walid-elmoussaoui)
