@@ -1,0 +1,125 @@
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Transparent background */
+  background: transparent;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #28a745;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  animation: fadeInDown 1s ease;
+}
+
+.subtitle {
+  color: #444;
+  font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  animation: fadeIn 1.5s ease;
+}
+
+.contact-button {
+  background: linear-gradient(90deg, #34c759, #2ca44b);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(46, 204, 64, 0.3);
+  animation: fadeInUp 1.2s ease;
+  position: relative;left: -15px;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(46, 204, 64, 0.4);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  animation: fadeIn 2s ease;
+}
+
+.social-links a {
+  color: #2e8b57;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;left: -10px;
+}
+
+.social-links a:hover {
+  color: #1c6b3f;
+  transform: scale(1.15);
+}
+
+.footer {
+  margin-top: 3rem;
+  color: #777;
+  font-size: 0.9rem;
+  animation: fadeIn 2.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    font-size: 1rem;
+    padding: 0.9rem 1.8rem;
+  }
+
+  .social-links {
+    gap: 1.2rem;
+  }
+}
+
+.contact-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}

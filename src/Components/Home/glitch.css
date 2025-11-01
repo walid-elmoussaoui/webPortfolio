@@ -1,0 +1,46 @@
+.glitch {
+  animation: flicker 2s infinite;}
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
+.glitch:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  animation: flicker 0.5s infinite;
+}
+
+.homatext b {
+ text-transform: uppercase;
+  color: transparent;                 /* 👈 make text itself transparent */
+  -webkit-text-stroke: 1.5px #1900ff; /* 👈 add cyan outline around letters */
+  text-stroke: 1.5px #2f00ff;         /* (for some browsers) */
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Optional: glowing animation around letters */
+.homatext b::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00ffff;
+  opacity: 0.1;
+  filter: blur(4px);
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/* =============================== 🔹 WRAPPER to hide overflow =============================== */
+.skills-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 800px;
+}
+
+/* =============================== 🔹 SKILLS SCROLL STRIP =============================== */
+.skills {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scrollSkills 30s linear infinite;
+  position: relative;
+  top: 450px;
+}
+
+/* ✅ Duplicate all content for smooth loop */
+.skills>* {
+  flex-shrink: 0;
+}
+
+.skills::after {
+  content: '';
+}
+
+/* ✅ Infinite scroll animation (no glitch) */
+@keyframes scrollSkills {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ✅ Pause when hover */
+.skills:hover {
+  animation-play-state: paused;
+}
+
+/* =============================== 🔹 CARD STYLES =============================== */
+.card {
+  position: relative;
+  background-color: #0c0c0c;
+  min-width: 230px;
+  border: 2px solid rgba(30, 0, 255, 0.3);
+  border-radius: 20%;
+  padding: 25px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.1);
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid #1a35e4;
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.card::before {
+  transform: scaleX(0);
+  border-top: none;
+  border-bottom: none;
+}
+
+.card::after {
+  transform: scaleY(0);
+}
+
+/* ✅ Hover glow effect */
+.card:hover {
+  border-color: rgba(0, 255, 150, 0.5);
+  box-shadow: 0 0 25px rgba(0, 255, 150, 0.4);
+  transform: translateY(-5px) scale(1.05);
+  background-color: rgba(0, 255, 150, 0.08);
+}
+
+.card:hover::before,
+.card:hover::after {
+  transform: scale(1);
+  opacity: 1;
+  border-color: rgba(0, 255, 150, 0.7);
+}
+
+.card h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.card h3 span {
+  color: rgba(0, 255, 170, 0.7);
+  font-size: 0.9rem;
+}
+
+.card .num {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: rgba(0, 255, 170, 0.3);
+  font-size: 1rem;
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+  position: relative;
+  left: 40px;
+}
+
+.card:hover img {
+  transform: scale(1.1) rotate(3deg);
+}

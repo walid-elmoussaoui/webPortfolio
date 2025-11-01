@@ -1,0 +1,109 @@
+a{
+    position: relative;left: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 15px;
+    font-family: sans-serif;
+    
+}
+.prfile{
+    position: relative;left: 16%; 
+    width: 60px;
+    height: 60px;
+    border-radius: 48%;
+}
+.prfile{
+   box-shadow: 12px 15px 400px 50px rgba(11,40,249,1);
+-webkit-box-shadow: 12px 15px 400px 30px rgba(11,40,249,1);
+-moz-box-shadow: 12px 15px 400px 50px rgba(11,40,249,1);}
+
+nave{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+    background-color: hsla(0, 0%, 0%, 20%);
+}
+.linkedin{
+    position: relative;left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 48%;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ .header-nave a{
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+ .header-nave a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+ .header-nave a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+ .header-nave a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+ .header-nave a:nth-child(4) {
+  animation-delay: 0.4s;
+}
+ .header-nave a:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.header-nave a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.608); /* green + a bit transparent for normal state */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-nave a:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #001aff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+/* 🔵 Hover effect: blue text + underline appears */
+.header-nave a:hover {
+  color: #0037ff;
+  opacity: 1;
+}
+
+.header-nave a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.header-nave:hover a {
+  opacity: 0.5;
+}
+
+.header-nave a:hover {
+  opacity: 1;
+  color: #0037ff;
+}

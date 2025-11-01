@@ -1,0 +1,113 @@
+
+
+  * {
+  box-sizing: border-box;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+
+.home {
+    position: absolute;left: 400px; top: -0px;
+    
+}
+.h2{
+    position: absolute; font-size: 30px; font-weight: 600;
+    width: 500px;
+    left: -60px; top: 170px;
+}
+.homatext{
+    position: absolute; font-size: 20px; font-weight: 400;
+    left:  10px; top: 250px; width: 620px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home div{
+  animation: fadeIn 0.10s ease forwards;
+  opacity: 0;
+}
+
+ .home div:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.home div:nth-child(2) {
+  animation-delay: 0.8s;
+}
+ .home div:nth-child(3) {
+  animation-delay: 2s;
+}
+.home div:nth-child(3){
+    position: absolute;
+    left: 50px; top: 360px; width: 500px;
+}
+
+.home div a:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  background-color: #001aff;
+  -webkit-transition: all .1s ease;
+  transition: all 0.3s ease;  
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  color: transparent;                 /* 👈 make text itself transparent */
+  -webkit-text-stroke: 1.5px #1900ff; /* 👈 add cyan outline around letters */
+  /* text-stroke removed (non-standard); using -webkit-text-stroke and fallback below */
+  text-shadow: 0 0 1px #2f00ff, 0 0 2px #2f00ff; /* fallback for non-supporting browsers */
+  letter-spacing: 1px;
+}
+
+.home div a:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  
+}
+
+.border {
+  position: relative;
+  left: -100px;
+  top: 500px;
+  width: 1000px;
+  height: 2px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #00ffff, #0077ff);
+  transform: scaleX(0);
+  transform-origin: center; 
+  animation: lineGrow 1.8s ease-out forwards; 
+}
+ 
+/* Animation keyframes */
+@keyframes lineGrow {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1); /* 👈 Fully extended */
+    opacity: 1;
+  }
+}
+
+.glitch:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  animation: flicker 0.5s infinite;
+}
