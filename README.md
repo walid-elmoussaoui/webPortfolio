@@ -7,8 +7,6 @@ I love crafting clean UIs with **React** and building secure APIs with **Laravel
 
 ### ⚙️ Tech Stack
 **Frontend:** HTML, CSS, JavaScript, React  
-**Backend:** PHP (Laravel), Node.js  
-**Database:** MySQL, SQL, PL/SQL  
 **Tools:** Git, GitHub, Figma, VS Code  
 
 ---
